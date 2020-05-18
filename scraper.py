@@ -24,7 +24,7 @@ def data(athlete_id, follow_type):
         for result in results:
             avatar = result.find("div", class_="avatar")
             if avatar is not None:
-                print avatar['title'].encode('utf-8')
+                print(result['data-athlete-id'], avatar['title'])
         # print result['data-athlete-id'] , avatar['title'].encode('utf-8')
         i = i + 1
 
